@@ -8,15 +8,17 @@ The goal of this project is to provide an intuitive experience for customers, fa
 
 ### Current Features
 
-- **Home Page:** (In development) Will showcase the restaurant with images and a brief description.
-- **Login:** Coming soon.
+- **Home Page:** (In development) A clean home page with header and images.
+- **About:** Coming soon.
 - **Menu:** Coming soon.
+- **Login:** Coming soon.
 - **Reviews:** Coming soon.
 - **Reservations:** Coming soon.
 - **Responsiveness:** Layout adapted for different devices (desktop, tablet, mobile).
 
 ### Planned Features
 
+- **About:** Will showcase the restaurant with images and a brief description.
 - **Login:** Secure login system for managing reservations and personalized interactions.
 - **Menu:** Detailed list of dishes with descriptions, prices, and images.
 - **Reviews:** Options for customers to leave reviews and feedback about the restaurant.
@@ -29,7 +31,6 @@ The goal of this project is to provide an intuitive experience for customers, fa
   - TypeScript
   - HTML5
   - CSS3
-  - Bootstrap (or another CSS framework, if used)
 
 - **Backend:** (To be determined)
   - Node.js (potentially)
