@@ -20,6 +20,14 @@ img {
     width: auto;
 }
 
+div {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
 ul {
     display: flex;
     align-items: center;
@@ -40,5 +48,35 @@ li a {
 }
 
 li a:hover {
-    color: #ef4135;
+    color: #002654;
+}
+
+/* Ajuste no .login-button */
+
+.login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+}
+
+/* Ajuste na classe do mat-icon */
+.profile-icon {
+    font-size: 35px;
+    height: 35px;
+    width: 35px;
+    color: #fff;
+    opacity: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Remove possíveis margens */
+    margin: 0;
+    padding: 0;
+}
+
+.profile-icon:hover {
+    color: #002654;
+    cursor: pointer;
 }

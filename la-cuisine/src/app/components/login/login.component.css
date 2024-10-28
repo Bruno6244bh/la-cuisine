@@ -1,0 +1,143 @@
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    border: solid 2px #002654;
+    width: 1000px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+button {
+    border-radius: 5px;
+    display: block;
+    text-decoration: none;
+    width: 200px;
+    height: 25px;
+    cursor: pointer;
+    font-family: "Caveat", cursive;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: 4;
+    background: #002654;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 5px;
+    transform: translateX(0);
+    transition: transform 1s ease-in-out;
+}
+
+.togglepanel {
+    transform: translateX(100%);
+    transition: ease-in-out 1s;
+}
+
+.hide {
+    display: none;
+}
+
+.panel h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.panel p {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.panel button {
+    background-color: #002654;
+    color: #fff;
+    border: solid 2px #fff;
+}
+
+.panel button:hover {
+    background-color: #fff;
+    color: #002654
+}
+
+.formsContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.form {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    transition: ease-in-out;
+    transition-delay: .7s;
+}
+
+.none {
+    display: none;
+}
+
+.hide {
+    opacity: 0;
+    transition: ease-in-out;
+    transition-delay: 1s;
+    transition-duration: .5s;
+}
+
+.form button {
+    border: solid 2px #002654;
+    color: #002654;
+}
+
+.form button:hover {
+    background-color: #002654;
+    color: #fff;
+}
+
+legend {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    color: #002654;
+}
+
+label {
+    font-weight: 600;
+    color: #002654;
+    display: block;
+    font-size: 1.2rem;
+}
+
+input {
+    border: solid 2px #002654;
+    height: 30px;
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px #002654
+}
+
+
+input::placeholder {
+    padding-left: 10px;
+}
