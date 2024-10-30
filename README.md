@@ -8,10 +8,10 @@ The goal of this project is to provide an intuitive experience for customers, fa
 
 ### Current Features
 
-- **Home Page:** (In development) A clean home page with header and images.
+- **Home Page:** A clean home page with header and images.
+- **Login page:** (In Development) - SignIn / SignUp Screen
 - **About:** Coming soon.
 - **Menu:** Coming soon.
-- **Login:** Coming soon.
 - **Reviews:** Coming soon.
 - **Reservations:** Coming soon.
 - **Responsiveness:** Layout adapted for different devices (desktop, tablet, mobile).
