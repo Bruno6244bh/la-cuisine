@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
+import { LoginService } from '../login/login.service';
 
 @Component({
   selector: 'app-header',
@@ -9,5 +10,9 @@ import {MatIconModule} from '@angular/material/icon';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  constructor(private loginService: LoginService) {}
 
+  onLoginClick() {
+    this.loginService.toggleLoginVisibility();
+  }
 }

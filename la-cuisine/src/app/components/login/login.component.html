@@ -1,9 +1,9 @@
-<div class="overlay">
+<div class="overlay" *ngIf="loginService.isLoginVisible()">
     <div class="container">
         <div class="panel">
             <h2>Novo por Aqui ?</h2>
             <p>Cadastre-se para gerenciar suas reservas, simples e rápido</p>
-            <button class="toggle" (click)="toggleClass()">Cadastre-se</button>
+            <button class="toggle">Cadastre-se</button>
         </div>
         <div class="formsContainer">
             <div class="form signUp hide">
