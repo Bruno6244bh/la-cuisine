@@ -1,13 +1,13 @@
 <div class="overlay" *ngIf="loginService.isLoginVisible()">
     <div class="container">
-        <div class="panel">
-            <h2>Novo por Aqui ?</h2>
-            <p>Cadastre-se para gerenciar suas reservas, simples e rápido</p>
-            <button class="toggle">Cadastre-se</button>
+        <div class="panel" #panelRef>
+            <h2 #panelH2Ref>{{texts.heading}}</h2>
+            <p #panelPRef>{{texts.paragraph}}</p>
+            <button class="toggle" (click)="click()" #panelButtonRef>{{texts.button}}</button>
         </div>
         <div class="formsContainer">
-            <div class="form signUp hide">
-                <form action="">
+            <div class="form signUp hide" #signUpRef>
+                <form class="signUpForm" action="">
                     <legend>Cadastre-se</legend>
                     <label for="name">Nome Completo</label>
                     <input type="text" name="name" id="name" placeholder="Nome Completo" required>
@@ -28,10 +28,12 @@
                     <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirme sua senha" required>
 
                     <button><a href="#"></a>Cadastre-se</button>
+
+                    <span class="signUpSpan"></span>
                 </form>
             </div>
-            <div class="form signIn">
-                <form action="#">
+            <div class="form signIn" #signInRef>
+                <form class="signInSpan" action="#">
                     <legend>Entrar</legend>
                     <label for="email">Email</label>
                     <input type="text" name="email" id="LoginEmail" placeholder="name@email.com" required>
@@ -40,6 +42,7 @@
                     <input type="password" name="password" id="LoginPassword" placeholder="Digite sua senha" required>
 
                     <button><a href="#"></a>Entrar</button>
+                    <span class="signInSpan"></span>
                 </form>
             </div>
         </div>

@@ -108,6 +108,7 @@ button {
 .form button {
     border: solid 2px #002654;
     color: #002654;
+    margin-bottom: 20px;
 }
 
 .form button:hover {
@@ -134,10 +135,29 @@ input {
     width: 300px;
     margin-bottom: 10px;
     border-radius: 5px;
-    box-shadow: 2px 2px 1px #002654
+    box-shadow: 2px 2px 1px #002654;
+    padding: 5px;
 }
 
 
 input::placeholder {
-    padding-left: 10px;
+    padding: 5px;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none; 
+    margin: 0;
+}
+
+span {
+    padding: 3px;
+    border-radius: 20px;
+    color: red;
+    font-size: 1.2rem;
 }
