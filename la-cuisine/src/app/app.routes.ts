@@ -1,14 +1,20 @@
-import { Routes } from '@angular/router';
+import { provideRouter, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 
 export const routes: Routes = [
     {
         path: '', 
-        component: HomeComponent
+        component: HomeComponent,
     },
     {
         path: 'about',
-        component: AboutComponent
-    }
+        component: AboutComponent,
+    },
 ];
+
+// //tentativa de configuração do roteamento
+
+// export const appRoutingProviders = [
+//     provideRouter(routes)
+// ]
