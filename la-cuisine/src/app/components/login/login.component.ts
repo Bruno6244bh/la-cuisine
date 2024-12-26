@@ -56,11 +56,11 @@ export class LoginComponent implements AfterViewInit {
         this.texts.paragraph = 'Cadastre-se para gerenciar suas reservas, simples e rápido';
         this.texts.button = 'Cadastre-se';
       }
+    }
   }
-}
 
-isVisible = this.loginService.isLoginVisible;
+  isVisible = this.loginService.isLoginVisible;
 
-constructor(public loginService: LoginService) {}
+  constructor(public loginService: LoginService) {}
 
 }

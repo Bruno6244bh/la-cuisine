@@ -4,79 +4,95 @@
     box-sizing: border-box;
 }
 
-header {
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 70px;
+    padding: 1rem 10%;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(25px);
+    z-index: 100;
     display: flex;
-    padding: 10px 45px;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    /* background-color: rgba(255,255,255,0.2) */
-}
-
-img {
-    height: 50px;
-    width: auto;
-}
-
-div {
-    display: flex;
-    flex-direction: row;
-    gap: 35px;
     align-items: center;
-    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-ul {
-    display: flex;
+.toggleMenu {
+    display: inline-flex;
+}
+
+.navbar {
+    display: none;
+    position: fixed;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 35px;
+    top: 100%;
+    padding: 1rem 10%;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 99;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
 
-li {
-    list-style-type: none;
-}
-
-li a {
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: #fff;
+a {
+    font-size: 1.6rem;
     text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 }
 
-li a:hover {
-    color: #002654;
-}
-
-/* Ajuste no .login-button */
-
-.login-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 35px;
-    width: 35px;
-}
-
-/* Ajuste na classe do mat-icon */
-.profile-icon {
-    font-size: 35px;
-    height: 35px;
-    width: 35px;
-    color: #fff;
-    opacity: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* Remove possíveis margens */
-    margin: 0;
-    padding: 0;
-}
-
-.profile-icon:hover {
-    color: #002654;
+a:hover {
     cursor: pointer;
+    color: #000091;
 }
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+nav.active {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+
+    .header{
+        padding: 1rem 5%;
+    }
+
+    .navbar {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        top: 0;
+        height: auto;
+        background: rgba(255, 255, 255, 0);
+        box-shadow: none;
+        height: auto;
+        width: auto;
+        padding: 0;
+        gap: 20px;
+    }
+
+    #navbar a {
+        font-size: 1.5rem;
+
+    }
+
+    .toggleMenu {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    #navbar {
+        gap: 30px
+    }
+}
+

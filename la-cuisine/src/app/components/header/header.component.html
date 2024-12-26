@@ -1,13 +1,11 @@
-<header>
-    <img src="images/Logo_LaCuisine.png" alt="La Cuisine logo">
-
-    <div>
-        <ul class="menu">
-            <li class="menu-item"><a routerLink="/" routerLinkActive="Active">Home</a></li>
-            <li class="menu-item"><a routerLink="/menu">Menu</a></li>
-            <li class="menu-item"><a routerLink="/reservations">Reservations</a></li>
-            <li class="menu-item"><a routerLink="/contact">Contact</a></li>
-        </ul>
-        <a class="login-button" (click)="onLoginClick()"><mat-icon class="profile-icon">account_circle</mat-icon></a>
-    </div>
+<header class="header">
+    <img class="logo" src="images/Logo_LaCuisine.png" alt="La Cuisine logo">
+    <a [class.open]="navActive()" (click)="toggleNav()" class="toggleMenu"><mat-icon>menu</mat-icon></a>
+    <nav [class.active]="navActive()" class="navbar">
+        <a routerLink="/" routerLinkActive="Active">Home</a>
+        <a routerLink="/menu">Menu</a>
+        <a routerLink="/reservations">Reservations</a>
+        <a routerLink="/contact">Contact</a>
+        <a class="login-button" (click)="onLoginClick()">Login</a>
+    </nav>
 </header>
