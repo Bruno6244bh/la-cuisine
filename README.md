@@ -8,9 +8,9 @@ The goal of this project is to provide an intuitive experience for customers, fa
 
 ### Current Features
 
-- **Home Page:** A clean home page with header and images.
+
+- **Home Page:** A clean home page with images and a brief description.
 - **Login page:** (In Development) - SignIn / SignUp Screen
-- **About:** Coming soon.
 - **Menu:** Coming soon.
 - **Reviews:** Coming soon.
 - **Reservations:** Coming soon.
@@ -18,7 +18,7 @@ The goal of this project is to provide an intuitive experience for customers, fa
 
 ### Planned Features
 
-- **About:** Will showcase the restaurant with images and a brief description.
+- **Home:** Will showcase the restaurant with images and a brief description.
 - **Login:** Secure login system for managing reservations and personalized interactions.
 - **Menu:** Detailed list of dishes with descriptions, prices, and images.
 - **Reviews:** Options for customers to leave reviews and feedback about the restaurant.
